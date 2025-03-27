@@ -1,0 +1,20 @@
+IAT 460 Generative AI and Computational Creativity
+Final Project
+Harjot Singh
+FoodVisionAI
+
+What it is:
+FoodVisionAI is an AI powered application to help people generate dish ideas with ingredients they have on hand with a goal to reduce food waste by 
+making use of all our left over and available ingredients to produce a tasty, creative dish.
+
+How does it work:
+I have made use of OpenAI's GPT-4o model for image classification and dish idea generation as well as intructutions for cooking and prepping. 
+Dalle 3 model is then used to take our dish, steps, and ingredients to use text-to-image generation to create a visual of our dish for the user.
+The user can read the ingredients list, the instructions, and the step-by-step of the dish.
+
+How to run the app:
+First clone the back end (git clone https://github.com/harjotsk03/foodvisionaibackend.git). Once cloned open and run npm install, create a .env file with 
+OPENAI_API_KEY as a variable and place your OpenAI API key here. Then you can run node server.js and the backend should be running on server 3004.
+Second clone the front end (git clone https://github.com/harjotsk03/foodvisionaifrontend.git). Once cloned open and run npm install, create a .env file with 
+EXPO_PUBLIC_OPENAI_API_KEY where you can set it to your OpenAI API key and EXPO_PUBLIC_BACKEND_URL which you can set to your IP adress of your device followed by /3004 
+(or whichever server your backend is running locally on). Then you can run npm start, download the Expo app on your device or run the app using an emulator on your device and you are set.
